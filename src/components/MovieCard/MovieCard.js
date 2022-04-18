@@ -15,7 +15,17 @@ const MovieCard = (props) => {
         <Card.Img variant="top" src={props.image.medium} />
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>
-          <Link to={`/search/${props.id}`} state={props.name}>
+          <Link
+            to={`/search/${props.id}`}
+            state={{
+              name: props.name,
+              id: props.id,
+              summary: props.summary,
+              image: props.image,
+              genres: props.genres,
+              officialSite: props.officialSite,
+            }}
+          >
             <Button variant="primary">Go somewhere</Button>
           </Link>
         </Card.Body>
