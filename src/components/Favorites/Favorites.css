@@ -1,0 +1,11 @@
+.favorites-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+}
+.favorites-wrapper {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}

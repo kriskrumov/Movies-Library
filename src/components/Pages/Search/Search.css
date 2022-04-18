@@ -1,0 +1,23 @@
+.search-form-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.searched-shows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.movie-list li {
+  margin: 5px;
+}
