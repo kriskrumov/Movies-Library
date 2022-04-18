@@ -8,6 +8,7 @@ import Alert from "react-bootstrap/Alert";
 import Spinner from "react-bootstrap/Spinner";
 import MovieCard from "../../MovieCard/MovieCard";
 import ErrorModal from "../../UI/ErrorModal/ErrorModal";
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 const Search = () => {
   const [search, setSearch] = useState("");
 
