@@ -10,7 +10,7 @@ const Hero = () => {
         <h1>Movie-DB</h1>
         <p>The biggest movie library.</p>
         <Link to="/search">
-          <Button>Search</Button>
+          <Button>Movies</Button>
         </Link>
       </div>
     </div>

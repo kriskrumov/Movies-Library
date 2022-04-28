@@ -21,3 +21,12 @@
 .search-form-wrapper button {
   border-radius: 5px;
 }
+
+.login-register {
+  display: flex;
+  left: 15rem;
+  align-items: center;
+}
+.login-register button {
+  padding: 15px;
+}
