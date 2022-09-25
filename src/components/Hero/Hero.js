@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="hero-wrapper">
       <div className="hero-content-wrapper">
-        <h1>Movie-DB</h1>
+        <h1>Movie DB</h1>
         <p>The biggest movie library.</p>
         <Link to="/search">
           <Button>Movies</Button>
