@@ -8,7 +8,6 @@ const Hero = () => {
     <div className="hero-wrapper">
       <div className="hero-content-wrapper">
         <h1>Movie-DB</h1>
-        <h1>Test</h1>
         <p>The biggest movie library.</p>
         <Link to="/search">
           <Button>Movies</Button>
