@@ -1,3 +1,7 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+}
 .login-container form {
   display: flex;
   flex-direction: column;
@@ -6,12 +10,6 @@
   width: 20rem;
   padding: 2rem;
 }
-
-.login-container {
-  display: flex;
-  justify-content: center;
-}
-
 .login-container form input {
   padding: 10px;
   margin-top: 5px;

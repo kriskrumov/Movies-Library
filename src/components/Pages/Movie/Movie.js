@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import "./Movie.css";
 import Button from "react-bootstrap/Button";
 import StarRating from "../../UI/StarRating/StarRating";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Movie = (props) => {
   const [favorite, setFavorite] = useState(false);
@@ -13,6 +13,10 @@ const Movie = (props) => {
   const addToFavorites = () => {
     setFavorite(!favorite);
   };
+
+  useEffect(() => {
+    console.log(data);
+  }, []);
 
   const removeTags = (myString) => {
     return myString.replace(/(<([^>]+)>)/gi, "");

@@ -11,7 +11,6 @@ import ErrorModal from "../../UI/ErrorModal/ErrorModal";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 const Search = () => {
   const [search, setSearch] = useState("");
-
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -74,18 +73,31 @@ const Search = () => {
                   return val;
                 }
               })
-              .map(({ id, name, image, summary, genres, officialSite }) => (
-                <li key={id}>
-                  <MovieCard
-                    id={id}
-                    name={name}
-                    image={image}
-                    summary={summary}
-                    genres={genres}
-                    officialSite={officialSite}
-                  />
-                </li>
-              ))}
+              .map(
+                ({
+                  id,
+                  name,
+                  image,
+                  summary,
+                  genres,
+                  officialSite,
+                  rating,
+                  network,
+                }) => (
+                  <li key={id}>
+                    <MovieCard
+                      id={id}
+                      name={name}
+                      image={image}
+                      summary={summary}
+                      genres={genres}
+                      officialSite={officialSite}
+                      rating={rating.average}
+                      network={network}
+                    />
+                  </li>
+                )
+              )}
         </ul>
       </div>
     </div>
